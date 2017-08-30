@@ -1,0 +1,111 @@
+* {
+  border: 1px solid rgba(255, 0, 255, 0.5);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  align-items: center;
+}
+
+main > p {
+  text-align: center;
+  width: 100%;
+}
+
+#lead {
+  display: flex;
+  position: relative;
+}
+
+#lead header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#lead header div {
+  flex: 1 1 auto;
+}
+
+#lead > div > :nth-child(2) {
+  margin-top: 210px;
+}
+
+#masked {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  position: relative;
+  padding: 8px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#masked::before {
+  content: ' ';
+  border-top: 3px solid magenta;
+  border-bottom: 3px solid magenta;
+  width: 100%;
+  height: calc(100% + 9px);
+  top: 4px;
+  left: 0px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+#examples {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card > img {
+  flex: 0 0 auto;
+}
+
+.card > p {
+  flex: 1 1 auto;
+  background: magenta;
+  text-align: center;
+  padding: 0;
+  margin: 2px 0 0;
+}
+
+#form-banner {
+  width: 100%;
+  background: magenta;
+}
+
+.red {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .buttons {
+  display: flex;
+}
+
+input:required::before {
+  content: '*';
+  color: red;
+}
+ 
+
+ /*# sourceMappingURL= styles.css.map */
