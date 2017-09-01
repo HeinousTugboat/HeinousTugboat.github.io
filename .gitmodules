@@ -1,3 +1,6 @@
 [submodule "ecstatic-bits"]
 	path = ecstatic-bits
 	url = https://github.com/HeinousTugboat/ecstatic-bits.git
+[submodule "fcc"]
+	path = fcc
+	url = https://github.com/HeinousTugboat/fcc
