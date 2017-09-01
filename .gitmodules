@@ -1,0 +1,3 @@
+[submodule "ecstatic-bits"]
+	path = ecstatic-bits
+	url = https://github.com/HeinousTugboat/ecstatic-bits.git
