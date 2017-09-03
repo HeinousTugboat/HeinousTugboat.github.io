@@ -14,13 +14,16 @@ const paths = {
 
 };
 const config: Configuration = {
+    entry: {
+        friesian: './friesian/index.ts'
+    },
     module: {
         rules: [
             { test: /\.ts$/, use: 'ts-loader' }
         ]
     },
     output: {
-        filename: 'js/[name].bundle.js'
+        filename: '[name]/[name].bundle.js'
     }
 };
 
