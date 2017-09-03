@@ -5,11 +5,11 @@ import { Configuration } from 'webpack';
 import * as webpack from 'webpack-stream';
 const named = require('vinyl-named');
 
-const node = '!node_modules/**/*';
+const node = ['!node_modules/**/*','!ecstatic-bits/**/*', '!fcc/**/*'];
 const paths = {
-    pages: ['**/*.pug', node, '!templates/**/*'],
-    styles: ['**/*.scss', node],
-    bundle: ['**/*.ts', '**/*.js', node, '!*.ts', '!**/*.bundle.js', '!ecstatic-bits/**/*'],
+    pages: ['**/*.pug', ...node],
+    styles: ['**/*.scss', ...node],
+    bundle: ['**/*.ts', '**/*.js', ...node, '!*.ts', '!**/*.bundle.js'],
     out: '.'
 
 };
@@ -20,7 +20,7 @@ const config: Configuration = {
         ]
     },
     output: {
-        filename: '[name]/[name].bundle.js'
+        filename: 'js/[name].bundle.js'
     }
 };
 

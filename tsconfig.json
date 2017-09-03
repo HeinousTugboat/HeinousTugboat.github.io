@@ -1,6 +1,6 @@
 {
     "include": ["./**/*.ts"],
-    "exclude": [],
+    "exclude": ["ecstatic-bits/**/*", "fcc/**/*"],
     "compilerOptions": {
 
       /* Basic Options */
