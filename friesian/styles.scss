@@ -1,13 +1,17 @@
-* {
-    border: 1px solid rgba(255,0,255,0.5);
-}
+// * {
+//     border: 1px solid rgba(255,0,255,0.5);
+// }
 
 main {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
     margin: 1em;
     padding: 1em;
     align-items: center;
+    max-width: 800px;
+    margin: 1em auto;
     > p {
         text-align: center;
         width: 100%;
@@ -19,15 +23,64 @@ main {
     header {
         div {
             flex: 1 1 auto;
+            p {
+                font-size: 24px;
+                margin: -12px 0 0;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        #logo {
+            margin-top: -24px;
+            margin-right: 18px;
         }
         display: flex;
         position: absolute;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 42px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        background: rgba(255,255,255,0.5);
+        height: 124px;
+        overflow: visible;
     }
-    > div > :nth-child(2) {
+    #lead-content {
         margin-top: 170px + 40px;
     }
+    #cloudsky {
+        flex: 0 0 auto;
+        width: 437px;
+        height: 606px;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+        img {
+            clip-path: circle(345px at 345px 347px);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+}
+
+$a: 2px;
+$b: -1*$a;
+
+h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 80px;
+    margin: -10px 0 0;
+    font-weight: 100;
+    text-shadow:
+        0 $a #FFF,
+        $a $a #FFF,
+        $a 0 #FFF,
+        $b 0 #FFF,
+        $b $b #FFF,
+        0 $b #FFF,
+        $a $b #FFF,
+        $b $a #FFF,
+        0 0 $a #FFF;
 }
 
 #masked {

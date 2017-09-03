@@ -4,6 +4,8 @@ html.no-js(lang='en')
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
         link(rel='stylesheet' href='./styles.css')
+        link(rel="stylesheet" href="//brick.a.ssl.fastly.net/PT+Sans:400,700")
+        link(href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet")
         title The Friesian Empire Wedding and Events Center
     body
         main
@@ -13,19 +15,22 @@ html.no-js(lang='en')
                         div
                             h1 Coming Fall 2017!
                             p The Friesian Empire Wedding and Events Center!
-                        img(src="http://placehold.it/170")
-                    p The perfect location for Weddings, Corporate events, Social Events, Birthdays, Class/Family Reunions and other special events. This facility will be unlike any other in Central Ohio! We will also have Carriage and Sleigh Rides using our Friesian Horses.
+                        //- 170x170
+                        img#logo(src="http://placehold.it/170" height="170px" width="170px")
+                    p#lead-content The perfect location for Weddings, Corporate events, Social Events, Birthdays, Class/Family Reunions and other special events. This facility will be unlike any other in Central Ohio! We will also have Carriage and Sleigh Rides using our Friesian Horses.
                     blockquote#masked Make your special day even more memorable!
-                img(src="http://placehold.it/440x610")
+                #cloudsky: img(src="images/cloudsky.png")
+                //- 440x610
             #examples
                 .card
-                    img(src="http://placehold.it/275x200")
+                    img(src="images/meeting.png" width="275px" height="200px")
                     p Your Corporate Event
                 .card
-                    img(src="http://placehold.it/275x200")
+                    img(src="images/wedding.jpg" width="275px" height="200px")
                     p Your Wedding or Wedding Photos
                 .card
-                    img(src="http://placehold.it/275x200")
+                    //- 275x200
+                    img(src="images/birthday.jpg" width="275px" height="200px")
                     p Your Birthday Party
             p We are currently going through the conversion process so we cannot take reservations or quote pricing, at this time.
             p#form-banner Please leave all of your contact information so that you can be among the first notified when we're ready to give pricing, book dates and give personal tours!

@@ -1,12 +1,13 @@
-* {
-  border: 1px solid rgba(255, 0, 255, 0.5); }
-
 main {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 26px;
   display: flex;
   flex-direction: column;
   margin: 1em;
   padding: 1em;
-  align-items: center; }
+  align-items: center;
+  max-width: 800px;
+  margin: 1em auto; }
   main > p {
     text-align: center;
     width: 100%; }
@@ -18,11 +19,43 @@ main {
     display: flex;
     position: absolute;
     width: 100%;
-    margin-top: 40px; }
+    margin-top: 42px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
+    height: 124px;
+    overflow: visible; }
     #lead header div {
       flex: 1 1 auto; }
-  #lead > div > :nth-child(2) {
+      #lead header div p {
+        font-size: 24px;
+        margin: -12px 0 0;
+        text-transform: uppercase;
+        font-weight: 700; }
+    #lead header #logo {
+      margin-top: -24px;
+      margin-right: 18px; }
+  #lead #lead-content {
     margin-top: 210px; }
+  #lead #cloudsky {
+    flex: 0 0 auto;
+    width: 437px;
+    height: 606px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1; }
+    #lead #cloudsky img {
+      clip-path: circle(345px at 345px 347px);
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+
+h1 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 80px;
+  margin: -10px 0 0;
+  font-weight: 100;
+  text-shadow: 0 2px #FFF, 2px 2px #FFF, 2px 0 #FFF, -2px 0 #FFF, -2px -2px #FFF, 0 -2px #FFF, 2px -2px #FFF, -2px 2px #FFF, 0 0 2px #FFF; }
 
 #masked {
   border-top: 5px solid black;
