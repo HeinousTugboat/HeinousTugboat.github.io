@@ -4,6 +4,3 @@
 [submodule "fcc"]
 	path = fcc
 	url = https://github.com/HeinousTugboat/fcc
-[submodule "nucleogenesis"]
-	path = nucleogenesis
-	url = https://github.com/HeinousTugboat/nucleogenesis.git
